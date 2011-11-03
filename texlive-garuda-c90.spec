@@ -1,5 +1,11 @@
+# revision 15878
+# category Package
+# catalog-ctan undef
+# catalog-date undef
+# catalog-license undef
+# catalog-version undef
 Name:		texlive-garuda-c90
-Version:	20111102
+Version:	20111103
 Release:	1
 Summary:	TeX support (from CJK) for the garuda font in thailatex
 Group:		Publishing
@@ -41,6 +47,7 @@ TeXLive garuda-c90 package.
 %{_texmfdistdir}/fonts/tfm/public/garuda-c90/fgdr8z.tfm
 #- source
 %doc %{_texmfdistdir}/source/fonts/garuda-c90/garuda-c90.fontinst
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -51,3 +58,5 @@ TeXLive garuda-c90 package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips fonts source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
