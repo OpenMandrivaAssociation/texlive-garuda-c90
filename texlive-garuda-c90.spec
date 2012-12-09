@@ -49,3 +49,17 @@ TeXLive garuda-c90 package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips fonts source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20111103-2
++ Revision: 752183
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111103-1
++ Revision: 718520
+- texlive-garuda-c90
+- texlive-garuda-c90
+- texlive-garuda-c90
+- texlive-garuda-c90
+
