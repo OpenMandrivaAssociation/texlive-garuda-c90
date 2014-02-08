@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-garuda-c90
 Version:	20111103
-Release:	2
+Release:	3
 Summary:	TeX support (from CJK) for the garuda font in thailatex
 Group:		Publishing
 URL:		http://tug.org/texlive
