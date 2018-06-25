@@ -5,7 +5,7 @@
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-garuda-c90
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	TeX support (from CJK) for the garuda font
 Group:		Publishing
