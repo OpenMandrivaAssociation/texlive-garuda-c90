@@ -1,18 +1,12 @@
-# revision 30642
-# category Package
-# catalog-ctan undef
-# catalog-date undef
-# catalog-license undef
-# catalog-version undef
 Name:		texlive-garuda-c90
-Version:	20190228
+Version:	60832
 Release:	1
 Summary:	TeX support (from CJK) for the garuda font
 Group:		Publishing
 URL:		http://tug.org/texlive
 License:	http://www.tug.org/texlive/LICENSE.TL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/garuda-c90.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/garuda-c90.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/garuda-c90.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/garuda-c90.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -23,12 +17,12 @@ Requires:	texlive-fonts-tlwg
 TeXLive garuda-c90 package.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -43,7 +37,7 @@ TeXLive garuda-c90 package.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
