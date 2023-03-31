@@ -1,6 +1,6 @@
 Name:		texlive-garuda-c90
 Version:	60832
-Release:	1
+Release:	2
 Summary:	TeX support (from CJK) for the garuda font
 Group:		Publishing
 URL:		http://tug.org/texlive
