@@ -3,7 +3,7 @@ Version:	60832
 Release:	2
 Summary:	TeX support (from CJK) for the garuda font
 Group:		Publishing
-URL:		http://tug.org/texlive
+URL:		https://tug.org/texlive
 License:	http://www.tug.org/texlive/LICENSE.TL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/garuda-c90.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/garuda-c90.source.r%{version}.tar.xz
